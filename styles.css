@@ -1,0 +1,132 @@
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left-container, .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 50%;
+    border-radius: 10%;
+    padding: 30px;
+    box-shadow: 10px 10px 50px -20px gray;
+    color: hsl(0, 0%, 100%);
+}
+
+.left-container {
+    background-image: linear-gradient(hsl(241, 39%, 56%), hsl(252, 100%, 67%));
+}
+
+.right-container {
+    background-color: hsl(0, 0%, 100%);
+    gap: 20px;
+}
+
+.right-container > h3, .grade {
+    color: hsl(224, 30%, 27%);
+}
+
+.total {
+    color: gray;
+}
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+}
+
+.category {
+    display: grid;
+    grid-template-columns: 15px 1fr 1.5fr 1fr;
+    border-radius: 12px;
+    height: 50px;
+}
+
+.circle {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.circle > h4, .circle > p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.circle > h4 {
+    font-size: 4rem;
+    margin-top: 30px;
+}
+
+#reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 10%);
+}
+
+#memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 10%);
+}
+
+#verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 10%);
+}
+
+#visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(221, 100%, 96%);
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    width: 90%;
+    border: 0px;
+    border-radius: 12px;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    padding: 10px;
+}
+
+.hover {
+    background-color: gray;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: 120vh;
+    }
+    
+    .left-container, .right-container {
+        width: 100%;
+    }
+
+    .left-container {
+        border-radius: 0px 0px 10% 10%;
+    }
+}
